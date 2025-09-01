@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/SparseArray-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/SparseArray-{{ version }}.tar.gz
   sha256: 142e27ca344f00af488cde800d51325917f1ec302589745d01f5e373757f9505
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 5
+  number: 6
   skip: true  # [python_impl == 'pypy']  
 
 requirements:
